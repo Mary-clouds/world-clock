@@ -21,7 +21,7 @@ let doualaTime = parisDate.querySelector("doualaTime");
 let doualaTimezone = moment().tz("Africa/douala");
 // date time format
 let formatDate = format("MMMM Do YYYY");
-let formatTime = format("H:m:s [<small>]A[</small]");
+let formatTime = format("h:mm:ss [<small>]A[</small]");
 //displaying the date in the html
 los_angelesDate.innerHTML = los_angelesTimezone.formatDate;
 berlinDate.innerHTML = berlinTimezone.formatDate;
