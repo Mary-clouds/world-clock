@@ -4,10 +4,10 @@ function cityTimezone(){
 let formatDate = format("MMMM Do YYYY");
 let formatTime = format("h:mm:ss [<small>]A[</small]");
 //los angeles
-let los_angelesElement = document.querySelector("los-angeles");
+let los_angelesElement = document.querySelector("#los-angeles");
 if(los_angelesElement){ 
-let los_angelesDate = los_angelesElement.querySelector("laDate");
-let los_angelesTime = los_angelesElement.querySelector("laTime");
+let los_angelesDate = los_angelesElement.querySelector(".laDate");
+let los_angelesTime = los_angelesElement.querySelector(".laTime");
     //los angeles with moment
 let los_angelesTimezone = moment().tz("America/Los_Angeles");
     //displaying the LA date in the html
@@ -16,10 +16,10 @@ let los_angelesTimezone = moment().tz("America/Los_Angeles");
 los_angelesTime.innerHTML = los_angelesTimezone.formatTime;
 };
 //berlin
-let berlinElement = document.querySelector("berlin");
+let berlinElement = document.querySelector("#berlin");
 if(berlinElement){ 
-let berlinDate = parisElement.querySelector("berlinDate");
-let berlinTime = parisDate.querySelector("berlinTime");
+let berlinDate = parisElement.querySelector(".berlinDate");
+let berlinTime = parisDate.querySelector(".berlinTime");
       //berlin with moment
 let berlinTimezone = moment().tz("Europe/Berlin");
     //displaying the  berlin date in the html
@@ -28,10 +28,10 @@ let berlinTimezone = moment().tz("Europe/Berlin");
  berlinTime.innerHTML = berlinTimezone.formatTime;
 };
 //douala
-let doualaElement = document.querySelector("douala");
+let doualaElement = document.querySelector("#douala");
 if(doualaElement){ 
-let doualaDate = parisElement.querySelector("bdouala");
-let doualaTime = parisDate.querySelector("doualaTime");
+let doualaDate = parisElement.querySelector(".doualaDate");
+let doualaTime = parisDate.querySelector(".doulaTime");
      //douala with moment
 let doualaTimezone = moment().tz("Africa/douala");
     //displaying the douala date in the html
